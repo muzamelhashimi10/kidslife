@@ -55,7 +55,7 @@ if (!isset($_SESSION['name'])) {
                         <a class="nav-link text-white" href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="logout.php">logout</a>
+                        <a class="nav-link text-white" href="logout.php">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +65,7 @@ if (!isset($_SESSION['name'])) {
     <!-- login success message  -->
     <div class="alert alert-success alert-dismissible fade show mt-5 text-center">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Success!</strong> You are successfully logged in .
+        <strong>Success!</strong> You have successfully logged in .
     </div>
     <!-- login messsage end -->
     <!-- heading of course  -->
