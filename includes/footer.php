@@ -2,7 +2,7 @@
     <footer>
         <div class="container">
             <section style="height:80px;"></section>
-            <!----------- Footer ------------>
+            <!-- Footer --->
             <footer class="footer-bs">
                 <div class="row">
                     <div class="col-md-3 footer-brand animated fadeInLeft">
