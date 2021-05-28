@@ -2,8 +2,8 @@
 -- version 4.9.5
 -- https://www.phpmyadmin.net/
 --
--- Host: ID329766_kidseducate.db.webhosting.be
--- Generation Time: May 11, 2021 at 04:09 PM
+-- Host: com-linweb188.srv.combell-ops.net:3306
+-- Generation Time: May 29, 2021 at 01:14 AM
 -- Server version: 5.7.33-36-log
 -- PHP Version: 7.1.25-1+0~20181207224605.11+jessie~1.gbpf65b84
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `ID329766_kidseducate`
 --
+CREATE DATABASE IF NOT EXISTS `ID329766_kidseducate` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `ID329766_kidseducate`;
 
 -- --------------------------------------------------------
 
@@ -39,7 +41,7 @@ CREATE TABLE `aboutus` (
 --
 
 INSERT INTO `aboutus` (`id`, `message`, `date`) VALUES
-(1, 'This is a online education platform to teach the future generation. Research shows there is no better time to create\r\n a strong lifelong learning than the first five years of life. It’s during this period that the brain develops most rapidly.\r\n And the things that matter most for healthy brain development, like talking and playing, don’t require more time or money.\r\n That’s why Kids Learn by D Fram Brothers™ is here.<br><br>Kids Learn believes all parents want\r\n what’s best for their children. So we joined with scientists, researchers, and parents to take the science out of\r\n the lab and put it in the hands of caregivers. We provides basic tips and tools to inspire kids to turn shared, \r\neveryday moments into Brain Building Moments®.<br><br>Like-minded communities, organizations, brands, and media help \r\nshare kids education Brain Building Moments. Together we are reaching parents where they are – we improve children\'s learning \r\nmethods and their capability.<br><br>Every time we connect with children, it\'s not just their eyes that light up—it\'s their brains, too. \r\nWe help all parents discover that they already have what it takes to boost their child\'s learning', '2021-05-07 04:27:05');
+(1, 'This is a online education platform to teach the future generation. Research shows there is no better time to create\r\n a strong lifelong learning than the first five years of life. It is during this period that the brain develops most rapidly.\r\n And the things that matter most for a healthy brain development, like talking and playing, do not require more time or money.\r\n That is why Kids Learn by D Fram Brother is here.<br><br>Kids Learn believes all parents want\r\n what is best for their children. So we joined with scientists, researchers, and parents to take the science out of\r\n the lab and put it in the hands of caregivers. We provides basic tips and tools to inspire kids to turn shared, \r\neveryday moments into Brain Building Moments.<br><br>Like-minded communities, organizations, brands, and media help \r\nshare kids education Brain Building Moments. Together we are reaching parents where they are, we improve children\'s learning \r\nmethods and their capability.<br><br>Every time we connect with children, it\'s not just their eyes that light up, it\'s their brains, too. \r\nWe help all parents discover that they already have what it takes to boost their child\'s learning', '2021-05-07 04:27:05');
 
 -- --------------------------------------------------------
 
@@ -130,7 +132,10 @@ INSERT INTO `contact` (`id`, `name`, `email`, `phone`, `message`, `date`) VALUES
 (4, 'Admin', 'admin@admin.com', '2323213', 'you are doing great', '2021-05-09 17:37:04'),
 (5, 'Admin', 'admin@admin.com', '2323213', 'you are doing great', '2021-05-09 17:38:36'),
 (6, 'Admin', 'admin@admin.com', '209830298', 'You are just excelent', '2021-05-10 09:01:10'),
-(7, 'Admin', 'admin@admin.com', '209830298', 'You are just excelent', '2021-05-10 09:01:38');
+(7, 'Admin', 'admin@admin.com', '209830298', 'You are just excelent', '2021-05-10 09:01:38'),
+(8, 'Rahman', 'rahman@gmail.com', '01323424', 'Nice moment with you.', '2021-05-11 18:57:01'),
+(9, 'muzamel', 'muzamelhashimi10@gmail.com', '+32483187805', 'heyyyy', '2021-05-28 11:48:35'),
+(10, 'sultan aziz sultani', 'muzamelhashimi10@gmail.com', '+32483187805', 'asdasdas', '2021-05-28 11:52:14');
 
 -- --------------------------------------------------------
 
@@ -253,7 +258,9 @@ CREATE TABLE `registration` (
 
 INSERT INTO `registration` (`id`, `kphoto`, `kfname`, `klname`, `kdate`, `confirmkid`, `pphoto`, `pfname`, `plname`, `address`, `city`, `zip`, `state`, `country`, `email`, `pass`, `phone`, `pdate`, `date`) VALUES
 (1, '../images/', 'Abhay', 'Assam', '2021-05-14', 'on', '../images/math.jpg', 's', 'd', 'f', 'f', 'dfd1', 'a', 'bel', 'email@email.com', 'admin', '24343', '2021-06-01', '2021-05-07 15:14:07'),
-(5, '../images/1101228.jpg', 'Rahman', 'Rahman', '2021-05-07', 'on', '../images/1101228.jpg', 'Akter', 'Akter', '121/1', 'kkk`', 'dfd1', 'a', 'Belgiam', 'rahman@gmail.com', 'rahman', '98493893', '2021-05-19', '2021-05-08 18:14:48');
+(5, '../images/1101228.jpg', 'Rahman', 'Rahman', '2021-05-07', 'on', '../images/1101228.jpg', 'Akter', 'Akter', '121/1', 'kkk`', 'dfd1', 'a', 'Belgiam', 'rahman@gmail.com', 'rahman', '98493893', '2021-05-19', '2021-05-08 18:14:48'),
+(6, '../images/su.jpg', 'Joe', 'Joe', '2001-01-15', 'on', '../images/su.jpg', 'Papa', 'Maha', '2326 street', 'berchem', '2050', 'flanders', 'belgium', 'joe@joe.com', 'joe123', '84587586', '1985-01-02', '2021-05-11 18:24:19'),
+(7, '../images/1101228.jpg', 'rahman', 'a', '2021-05-15', 'on', '../images/1101228.jpg', 's', 'd', 'afdfd', 'dfdf', '232', 'fdfd', 'Belgiam', 'r@gmail.com', 'r123', '243243', '2021-05-19', '2021-05-11 18:29:47');
 
 -- --------------------------------------------------------
 
@@ -408,7 +415,7 @@ ALTER TABLE `colorlecture`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `englishlecture`
@@ -438,7 +445,7 @@ ALTER TABLE `mathqa`
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `team`
