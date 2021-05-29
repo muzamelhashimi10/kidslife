@@ -49,6 +49,9 @@ include_once('connection.php');
                         <a class="nav-link text-white" href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-white" href="video.php">Video</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-white" href="signup.php">SignUP/login</a>
                     </li>
                 </ul>
@@ -80,6 +83,7 @@ include_once('connection.php');
                     <div class="card-body">
                         <h4 class="card-title">" <?php echo $show['name']; ?> "</h4>
                         <p class="card-text lead"><?php echo $show['profession']; ?></p>
+<!--                        <p class="card-text lead"><?php echo $show['joiningdate']; ?></p>-->
                     </div>
                 </div>
             </div>
@@ -109,8 +113,8 @@ include_once('connection.php');
                             <ul class="list">
                                 <li><a href="about.php">About Us</a></li>
                                 <li><a href="contact.php">Contacts</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms & Condition</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>

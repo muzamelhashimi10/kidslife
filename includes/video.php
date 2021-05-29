@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Video</title>
     <!-- Bootstrap version 4/5 -->
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -61,13 +61,11 @@
     <div class="container mt-5">
         <br><br>
         <div class="jumbotron">
-            <h1 class="display-4">Kids Education !</h1>
-            <?php
-            $s="select * from aboutus";
-            $q=mysqli_query($con,$s);
-            $show=mysqli_fetch_assoc($q);
-            ?>
-            <p class="lead"><?php echo $show['message']; ?></p>
+            <h1 class="display-4">Kids Education Explanatory Video</h1>
+                <video width="1000" height="720" controls>
+                    <source src="https://muzamelhashimi10.be/wp-content/uploads/2021/05/DFramBrothers.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
         </div>
 
     </div>

@@ -11,7 +11,7 @@ if (!isset($_SESSION['name'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Courses</title>
     <!-- Bootstrap version 4/5 -->
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -55,7 +55,10 @@ if (!isset($_SESSION['name'])) {
                         <a class="nav-link text-white" href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="logout.php">Logout</a>
+                        <a class="nav-link text-white" href="video.php">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="logout.php">logout</a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +68,7 @@ if (!isset($_SESSION['name'])) {
     <!-- login success message  -->
     <div class="alert alert-success alert-dismissible fade show mt-5 text-center">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
-        <strong>Success!</strong> You have successfully logged in .
+        <strong>Success!</strong> You are successfully logged in .
     </div>
     <!-- login messsage end -->
     <!-- heading of course  -->
@@ -157,8 +160,8 @@ if (!isset($_SESSION['name'])) {
                             <ul class="list">
                                 <li><a href="about.php">About Us</a></li>
                                 <li><a href="contact.php">Contacts</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms & Condition</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>

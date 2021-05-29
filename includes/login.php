@@ -9,7 +9,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <!-- Bootstrap version 4/5 -->
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -76,10 +76,20 @@ session_start();
               $dbpass=$pwd['pass'];
               $_SESSION['name']=$pwd['kfname'];
               if($pass===$dbpass){
-                header("location:course.php");
+                             ?>
+        <script>
+            window.location.href = "course.php?";
+
+        </script>
+        <?php
               }
               else{
-                header("location:login.php");
+                              ?>
+        <script>
+            window.location.href = "login.php";
+
+        </script>
+        <?php
               }
             }
             else{
@@ -133,8 +143,8 @@ session_start();
                             <ul class="list">
                                 <li><a href="about.php">About Us</a></li>
                                 <li><a href="contact.php">Contacts</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms & Condition</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>
